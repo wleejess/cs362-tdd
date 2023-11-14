@@ -21,7 +21,7 @@ def check_pwd(pwd):
             if char in specialChars:
                 special = True
         
-        if lowercase == True and uppercase == True and digits == True and special == True:
+        if (lowercase and uppercase and digits and special) == True:
             return True
         else:
             return False
