@@ -14,8 +14,6 @@ def check_pwd(pwd):
             lowercase = True
         if char in upperLetters:
             uppercase = True
-        if char in numDigits:
-            digits = True
     
     if lowercase == True and uppercase == True and digits == True:
         return True
