@@ -23,5 +23,10 @@ class TestCase(unittest.TestCase):
         expected = False
         self.assertFalse(check_pwd(pwd), expected)
 
+    def test5(self):
+        pwd = "12345678aB"
+        expected = False
+        self.assertFalse(check_pwd(pwd), expected)
+
 if __name__ == '__main__':
     unittest.main()
