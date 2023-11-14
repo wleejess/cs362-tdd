@@ -14,10 +14,14 @@ class TestCase(unittest.TestCase):
         self.assertFalse(check_pwd(pwd), expected)
 
     def test3(self):
-        pwd = "12345678"
+        pwd = "123456789012345678901"
         expected = False
         self.assertFalse(check_pwd(pwd), expected)
 
+    def test4(self):
+        pwd = "12345678a"
+        expected = False
+        self.assertFalse(check_pwd(pwd), expected)
 
 if __name__ == '__main__':
     unittest.main()
